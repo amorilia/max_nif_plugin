@@ -5,10 +5,6 @@
 	Name="NifPlugins"
 	ProjectGUID="{466F2D3E-2663-4583-A05C-128683677617}"
 	RootNamespace="NifPlugins"
-	SccProjectName="Svn"
-	SccAuxPath="Svn"
-	SccLocalPath="Svn"
-	SccProvider="SubversionScc"
 	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
