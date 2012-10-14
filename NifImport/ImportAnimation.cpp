@@ -14,7 +14,11 @@ HISTORY:
 #if VERSION_3DSMAX >= ((7000<<16)+(15<<8)+0) // Version 7
 #  include <IFrameTagManager.h>
 #endif
-#include <maxscrpt/strings.h>
+#if VERSION_3DSMAX < (14000<<16) // Version 14 (2012)
+#include "maxscrpt\Strings.h"
+#else
+#include "maxscript/maxscript.h"
+#endif
 #include <notetrck.h>
 #include "MaxNifImport.h"
 #include "NIFImporter.h"
