@@ -12,6 +12,7 @@ HISTORY:
 **********************************************************************/
 #include "stdafx.h"
 #include <shaders.h>
+#include <maxtypes.h>
 #include "MaxNifImport.h"
 #include "obj/NiWireframeProperty.h"
 #include "obj/NiAlphaProperty.h"
