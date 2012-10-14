@@ -45,7 +45,6 @@ static bool GetTexFullName(Texmap *texMap, TSTR& fName)
 	return false;
 }
 
-#undef GNORMAL_CLASS_ID
 static const Class_ID GNORMAL_CLASS_ID(0x243e22c6, 0x63f6a014);
 
 void Exporter::makeTexture(NiAVObjectRef &parent, Mtl *mtl)
