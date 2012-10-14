@@ -29,7 +29,7 @@ HISTORY:
 #if VERSION_3DSMAX < (14000<<16) // Version 14 (2012)
 #include "maxscrpt\Strings.h"
 #include "maxscrpt\Parser.h"
-//static inline void set_error_trace_back_active( BOOL value ) { trace_back_active = value; }
+static inline void set_error_trace_back_active( BOOL value ) { trace_back_active = value; }
 #else
 #include <maxscript/maxscript.h>
 #include <maxscript/compiler/parser.h>
