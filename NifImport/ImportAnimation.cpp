@@ -1151,19 +1151,19 @@ Control* AnimationImport::MakePositionXYZ(Control *tmCont, Class_ID clsid)
       if (Control *x = c->GetXController()){
          if (x->ClassID()!= clsid) {
             if (Control *tmp = (Control*)ip->CreateInstance(CTRL_FLOAT_CLASS_ID, clsid))
-               c->SetReference(IPOS_X_REF, tmp);
+               c->ReplaceReference(IPOS_X_REF, tmp);
          }
       }
       if (Control *y = c->GetYController()){
          if (y->ClassID()!= clsid) {
             if (Control *tmp = (Control*)ip->CreateInstance(CTRL_FLOAT_CLASS_ID, clsid))
-               c->SetReference(IPOS_Y_REF, tmp);
+               c->ReplaceReference(IPOS_Y_REF, tmp);
          }
       }
       if (Control *z = c->GetZController()){
          if (z->ClassID()!= clsid) {
             if (Control *tmp = (Control*)ip->CreateInstance(CTRL_FLOAT_CLASS_ID, clsid))
-               c->SetReference(IPOS_Z_REF, tmp);
+               c->ReplaceReference(IPOS_Z_REF, tmp);
          }
       }
       return c;
