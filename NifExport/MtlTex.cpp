@@ -664,10 +664,10 @@ bool Exporter::exportNiftoolsShader(NiAVObjectRef parent, Mtl* mtl)
 				}
 				else
 					textures[1] = mAppSettings->GetRelativeTexPath(string(normalStr), mTexPrefix);
+				if (!glowStr.isNull())
+					textures[2] = mAppSettings->GetRelativeTexPath(string(glowStr), mTexPrefix);
 				if (!envMaskStr.isNull())
 					textures[2] = mAppSettings->GetRelativeTexPath(string(envMaskStr), mTexPrefix);
-				if (!glowStr.isNull())
-					textures[3] = mAppSettings->GetRelativeTexPath(string(glowStr), mTexPrefix);
 				if (!dispStr.isNull())
 					textures[4] = mAppSettings->GetRelativeTexPath(string(dispStr), mTexPrefix);
 				if (!envStr.isNull())
